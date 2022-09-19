@@ -1,0 +1,359 @@
+@font-face {
+    font-family: 'poppin';
+    src: url('fonts/Poppins-Medium.ttf');
+    font-display: swap;
+}
+
+:root {
+    --color-rojo: #ec9634;
+    --color-claro: #ECE5CE;
+    --color-verde: #C5E0DC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caja{
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #FFFF;
+    padding: 20px;
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+}
+
+a {
+    
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: transparent;
+    border: solid var(--color-rojo);
+    border-radius: 17px;
+    padding: 8px;
+}
+
+a:hover {
+    border: solid var(--color-verde);
+    color: black;
+    cursor: pointer;
+}
+
+h1 {
+    text-shadow: 4px 1px black;
+    font-size: 28px;
+    color: var(--color-rojo);
+}
+
+
+body {
+    color: black;
+    background: rgb(90,123,219);
+background: radial-gradient(circle, rgba(90,123,219,1) 72%, rgba(235,136,99,1) 100%);
+    font-family: poppin;
+}
+
+.header {
+    padding: 5px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.header .contenedor-general {   
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+
+
+.header .contenedor-general h2 {
+    font-size: 22px;
+    color: black;
+}
+
+.header .contenedor-general p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.header .contenedor-general img {
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+    margin-top: 50px;
+}
+
+.header .contenedor-general .mensaje{
+    font-size: 23px;
+}
+
+.proyectos-principales{
+    padding: 5px;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.proyectos-principales h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.proyectos-principales .contenedor-general{
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.proyectos-principales .contenedor-general h2{
+    color: var(--color-verde);
+    font-size: 20px;
+}
+
+.proyectos-principales .contenedor-general h3{
+    font-size: 20px;
+}
+
+.proyectos-principales .contenedor-general .proyecto{
+    border: 0.3px solid var(--color-verde);
+    padding: 10px;
+    width: 95%;
+    border-radius: 16px;
+    margin-bottom: 100px;
+}
+
+.experimentos{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.experimentos h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.experimentos .contenedor-general{
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.experimentos .contenedor-general h2{
+    margin-top: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.experimentos .contenedor-general .experimento{
+    margin-bottom: 100px;
+    height: 490px;
+    border: 0.3px solid var(--color-verde);
+    width: 95%;
+    border-radius: 16px;
+} 
+
+.skills{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.skills h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills .contenedor-general{
+    margin-top: 55px;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.skills .contenedor-general .skill{
+    flex: 50%;
+}
+
+.skills .contenedor-general h2{
+    color: var(--color-verde);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.skills .contenedor-general .skill{
+    margin-bottom: 50px;
+}
+
+.footer{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.footer h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.footer .contenedor-general{
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.footer .contenedor-general h2{
+    color: var(--color-verde);
+    font-size: 25px;
+}
+
+.footer .contenedor-general .skill{
+    margin-bottom: 50px;
+}
+
+
+.footer .red-social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer .red-social .texto{
+    margin-left: 10px;
+}
+
+@media(min-width:817px) {
+
+ 
+    .header{
+        padding-right: 0;
+        padding-left: 32px;
+        display: flex;
+        margin: auto;
+        height: 100vh;
+        width: 80%;
+    }
+    
+    .header .contenedor-general { 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header .contenedor-general img{
+        margin-top: 0px;
+        width: 320px;
+        height: 300px;
+    }
+
+    .header .contenedor-general .parte-uno{
+        text-align: left;
+        flex: 51%;
+    }
+
+    .header .contenedor-general .parte-dos{
+        text-align: right;
+        flex: 49%;
+    }
+
+    .proyectos-principales{
+        margin-top: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .proyectos-principales .contenedor-general{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .proyectos-principales .contenedor-general .proyecto{
+        flex: 20%;
+        max-width: 300px;
+        padding: 10px;
+        height: 445px;
+        margin: 25px;
+        border-radius: 30px;
+    }
+
+    .experimentos{
+        margin-top: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .experimentos .contenedor-general{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .experimentos .contenedor-general .experimento{
+        flex: 30%;
+        max-width: 300px;
+        height: 480px;
+        margin: 25px;
+        border-radius: 30px;
+    }
+
+    .experimentos .contenedor-general .experimento .img-proyecto{
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+    }
+
+    .skills{
+        margin-top: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .skills .contenedor-general .skill{
+        flex: 20%;
+        padding: 30px;
+    }
+
+    .footer{
+        margin-top: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .footer .contenedor-general{
+        display: flex;
+        align-items: center;
+        margin: auto;
+        align-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer .contenedor-general .red-social{
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        align-content: space-between;
+        flex-direction: row;
+    }
+
+    .footer .contenedor-general .red-social .icono{
+        margin-top: 0;
+    }
+
+
+}
